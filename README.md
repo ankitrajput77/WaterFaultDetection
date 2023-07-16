@@ -43,6 +43,7 @@ pip install -r requirements.txt
 ├──  artifacts                    - here's the model pickle and dataset files.
 │    └── preprocessor.pkl  
 │    └── model.pkl
+│    └── features.pkl
 │    └── raw.csv
 │    └── train.csv
 │    └── test.csv
@@ -54,16 +55,16 @@ pip install -r requirements.txt
 │
 ├──  notebooks  
 │    └── EDA.ipynb                        - here's the EDA notebook.
-│    └── Model-training.ipynb             - here's the model training notebook.
-│    └── data 		                        - here's the folder for dataset.
-│          └── gemstone.csv               - here's the dataset present about diamond details.
+│    └── test.csv                         - here's the test csv.
+│    └── wafer.csv 		                    - here's the wafer csv.
+│                         
 │
 │
-├──  prediction_tries
-│   ├── prediction.py                     - code to predict the price for test_data.
-│   └── test_data.csv                     - here's the test_data.
-│   └── test_pred.csv                     - here's the predicted values for test_data(it will generate after running prediction.py).
+├──  prediction_artifacts                  
+│   └── pred.csv                          - here's the predicted values for test_data(it will generate after running prediction.py).
 │
+├──  prediction_test_file                  
+│   └── test.csv
 │
 │
 ├── src                                   - The "src" folder, short for "source".
@@ -81,19 +82,16 @@ pip install -r requirements.txt
 │
 │
 ├── static                                - this folder contains frontend css files.
-│   └── css
-│        └── styles.css 
 │   └── images
-│        └── github_logo
-│        └── kaggle_logo
-│
-│
-├── templates                             - this folder contains html files.
-│   └── home.html
 │   
+│
 │ 
+├── upload_datato_db
+│     └── upload.ipynb 
 │ 
-├── application.py                        - Code for webapp running.
+├── upload_data.py 
+│ 
+├── app.py                                - Code for webapp running.
 │					
 └──setup.py                               - project's metadata and configuration details
 ```
