@@ -1,4 +1,5 @@
 import streamlit as st
+import cv2
 from pymongo.mongo_client import MongoClient
 from src import utils
 import pandas as pd
